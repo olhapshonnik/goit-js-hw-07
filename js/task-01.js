@@ -17,9 +17,9 @@ const categoriesEl = document.querySelectorAll('.item');
 const totalCategories = categoriesEl.length;
 console.log(`В списке ${totalCategories} категории.`);
 
-categoriesEl.forEach(element => {
-    const titleCategory = element.querySelector('h2').textContent;
-    const totalItems = element.querySelectorAll('li').length;
+categoriesEl.forEach(e => {
+    const titleCategory = e.querySelector('h2').textContent;
+    const totalItems = e.querySelectorAll('li').length;
     console.log(`Категория: ${titleCategory};
     Количество элементов: ${totalItems}`);
 });
