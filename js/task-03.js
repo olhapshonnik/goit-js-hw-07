@@ -28,7 +28,7 @@ const images = [
 
   const imagesListRef = document.querySelector('#gallery');
 
-  imagesListRef.style.display = 'flex';
+  imagesListRef.style.display = 'display-flex';
   // imagesListRef.style.alignItems = 'center';
   // imagesListRef.style.justifyContent = 'space-between';
 
