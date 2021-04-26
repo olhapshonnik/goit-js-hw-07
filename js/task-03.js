@@ -29,13 +29,13 @@ const images = [
   const imagesListRef = document.querySelector('#gallery');
 
   imagesListRef.style.display = 'flex';
-  imagesListRef.style.alignItems = 'center';
-  imagesListRef.style.justifyContent = 'space-between';
+  // imagesListRef.style.alignItems = 'center';
+  // imagesListRef.style.justifyContent = 'space-between';
 
   const createListItem = images.map(image => {
       const itemEl = document.createElement('li');
       itemEl.insertAdjacentHTML('afterbegin', `<img src='${image.url}'
-      alt='${image.alt}' width='300px'>`,
+      alt='${image.alt}' width='250px'>`,
       );
 
       return itemEl;
