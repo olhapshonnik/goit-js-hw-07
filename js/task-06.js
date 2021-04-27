@@ -8,11 +8,23 @@
 
 const inputEl = document.querySelector('#validation-input');
 const lengthForm = inputEl.getAttribute('data-length');
-console.log(inputEl.dataset.length);
-console.log(inputEl.value.length);
-inputEl.addEventListener('blur', (e) => {
-    if (e.currentTarget.dataset.length == inputEl.value.length) {
-          inputEl.classList.add('valid');
+// console.log(inputEl.dataset.length);
+// console.log(inputEl.value.length);
+// inputEl.addEventListener('blur', (e) => {
+//     if (e.currentTarget.dataset.length == inputEl.value.length) {
+//           inputEl.classList.add('valid');
+//         inputEl.classList.remove('invalid');
+//     } else {inputEl.classList.add('invalid'); inputEl.classList.remove('valid');}
+// })
+
+const inputChange = e => {
+    if (e.target.value.length === Number(lengthForm)) {
+        inputEl.classList.add('valid');
         inputEl.classList.remove('invalid');
-    } else {inputEl.classList.add('invalid'); inputEl.classList.remove('valid');}
-})
+    } else {
+        inputEl.classList.add('invalid');
+        inputEl.classList.remove('valid');
+    }
+}
+
+inputEl.addEventListener('change', inputChange);
