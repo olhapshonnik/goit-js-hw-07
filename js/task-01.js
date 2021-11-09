@@ -13,15 +13,16 @@
 
 
 
+
+
+
 const categoriesEl = document.querySelectorAll('.item');
 const totalCategories = categoriesEl.length;
 console.log(`В списке ${totalCategories} категории.`);
-
 categoriesEl.forEach(e => {
     const titleCategory = e.querySelector('h2').textContent;
     const totalItems = e.querySelectorAll('li').length;
     console.log(`Категория: ${titleCategory};
     Количество элементов: ${totalItems}`);
 });
-
 
