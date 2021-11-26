@@ -4,7 +4,11 @@
 // Создай функции increment и decrement для увеличения и уменьшения значения счетчика
 // Добавь слушатели кликов на кнопки, вызовы функций и обновление интерфейса
 
-let counterValue = 0;
+
+
+
+
+"let counterValue = 0;
 const counterButtonsEl = document.querySelectorAll('#counter button');
 
 
@@ -16,4 +20,4 @@ const increment = () => valueEl.textContent = counterValue += 1;
 const decrement = () => valueEl.textContent = counterValue -= 1;
 
 btnDecrementEl.addEventListener('click', decrement);
-btnIncrementEl.addEventListener('click', increment);
+btnIncrementEl.addEventListener('click', increment);"
